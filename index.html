@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+      
+        body{
+            margin: 0;
+            background-color: #ECE5E5;
+        }
+         .intro{
+            height: 100vh;
+            padding-top: 5%;
+            
+            background-image: url('images/Web\ 1920\ –\ 1.png');
+           background-size: cover;
+           background-position: center;
+        }
+        .intro h5{
+            font-family: 'Poppins', sans-serif;
+            font-size: 290%;
+            white-space: nowrap;
+        }
+        .second{
+            height: 100vh;
+            background-image: url('images/Web\ 1920\ –\ 2.png');
+           background-size: cover;
+           background-position: center;
+        }
+        .chatbot{
+            display: flex;
+            padding-top: 10%;
+            padding-left:5%;
+        }
+        .chat-text{
+            background-color: white;
+            height: 50px;
+            width: 30%;
+            border-radius: 20px;
+        }
+        .chat-text p{
+            background-color: white;
+            padding-top: 10px;
+            padding-left: 8px;
+            font-size: 70%;
+        }
+
+
+
+        .chattext{
+            display: flex;
+        }
+        .chattext p{
+            background-color: white;
+            padding: 18px;
+            font-size: 90%;
+            width: 60%;
+            border-radius: 10px;
+            min-height: fit-content;
+        }
+
+
+
+    
+        .message{
+            display: flex;
+            padding-left: 40%;
+            padding-bottom: 30px;
+        }
+        .message input{
+            margin-top: 5%;
+            border-radius: 10px;
+        }
+        .user{
+            display: flex;
+            padding-top: 5%;    
+            padding-left:35%;
+        }
+        .usertext{
+            background-color: rgb(99, 247, 99);
+            min-height: 50px;
+            margin-bottom: 10px;
+            width:50%;
+            text-align: center;
+            border-radius: 20px;
+           
+        }
+        .usertext p{
+            border-radius: 20px;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+        <div class="intro text-center">
+            <h5>CHEF MASTER</h5>
+            <hp>An AI Controlled ChatBot<br>Learn How to Make Delicious Dishes</p>
+        </div>
+        <div class = "second">
+            <div class="chatbot">
+                <div class="chatimage"><img src = "images/307415.png" height="50px" width="50px"></div>
+                <div class="chat-text"><p id = "default">Hey! please Tell the dish You want to prepare.</p></div>
+            </div>
+            
+
+
+            <!-- User text and typing -->
+            <div class = "user d-none">
+                <div class = "usertext"></div>
+                <div class = "user-image"><img src= "images/default.png" height="50px" width="50px"></div>
+            </div>
+            <!-- chatbot text -->
+            <div class="chattext d-none">
+                <div class="chatimage"><img src = "images/307415.png" height="50px" width="50px"></div>
+                <div class = "resulttext"></div>
+            </div>
+            <div class = "message">
+                <div class = "messagetab"><form> <input type = "text" name = "message" class="msg border-0"></form></div>
+                
+            </div>
+            
+           
+        </div>
+   
+    <script src = "sandbox.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
