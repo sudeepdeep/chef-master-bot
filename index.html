@@ -16,10 +16,11 @@
          .intro{
             height: 100vh;
             padding-top: 5%;
-            
+        
             background-image: url('images/Web\ 1920\ –\ 1.png');
-           background-size: cover;
-           background-position: center;
+            background-attachment: fixed;
+            background-size: auto 100%;
+            background-position: center;
         }
         .intro h5{
             font-family: 'Poppins', sans-serif;
@@ -29,59 +30,82 @@
         .second{
             height: 100vh;
             background-image: url('images/Web\ 1920\ –\ 2.png');
-           background-size: cover;
+           background-size: auto 100%;
            background-position: center;
+           background-attachment: fixed;
         }
+
+
+
+
         .chatbot{
             display: flex;
             padding-top: 10%;
-            padding-left:5%;
+            padding-left:15%;
         }
         .chat-text{
             background-color: white;
             height: 50px;
-            width: 30%;
+            width: 35%;
+            text-align: center;
             border-radius: 20px;
         }
         .chat-text p{
-            background-color: white;
             padding-top: 10px;
-            padding-left: 8px;
             font-size: 70%;
         }
 
 
 
+
+
         .chattext{
-            display: flex;
-        }
-        .chattext p{
-            background-color: white;
-            padding: 18px;
-            font-size: 90%;
-            width: 60%;
-            border-radius: 10px;
+            padding-left: 15%;
+            width: 80%;
             min-height: fit-content;
+            background-color: white;
+            padding-bottom: 50px;
+            border-radius: 20px;
+            margin-left: 20px;
         }
 
+        .chatheading h3{
+            padding-top: 30px;
+        }
+        .chattext p{
+            
+            padding: 18px;
+            font-size: 90%;
+    
+        }
+        .chattext img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
 
 
     
         .message{
             display: flex;
             padding-left: 40%;
+            padding-top: 20px;
             padding-bottom: 30px;
         }
         .message input{
             margin-top: 5%;
             border-radius: 10px;
         }
+
+
+
         .user{
             display: flex;
             padding-top: 5%;    
-            padding-left:35%;
+            padding-left: 40%;
         }
         .usertext{
+            
             background-color: rgb(99, 247, 99);
             min-height: 50px;
             margin-bottom: 10px;
@@ -103,7 +127,7 @@
         </div>
         <div class = "second">
             <div class="chatbot">
-                <div class="chatimage"><img src = "images/307415.png" height="50px" width="50px"></div>
+                <div class="chat-image"><img src = "images/307415.png" height="50px" width="50px"></div>
                 <div class="chat-text"><p id = "default">Hey! please Tell the dish You want to prepare.</p></div>
             </div>
             
@@ -116,8 +140,8 @@
             </div>
             <!-- chatbot text -->
             <div class="chattext d-none">
-                <div class="chatimage"><img src = "images/307415.png" height="50px" width="50px"></div>
-                <div class = "resulttext"></div>
+                <div class = "chatheading">
+                </div>
             </div>
             <div class = "message">
                 <div class = "messagetab"><form> <input type = "text" name = "message" class="msg border-0"></form></div>
