@@ -3,7 +3,7 @@ const usertext = document.querySelector('.usertext');
 const user = document.querySelector('.user');
 const chattext = document.querySelector('.chattext')
 const chatheading = document.querySelector('.chatheading');
-
+const loader = document.querySelector('.loader');
 
 
 
@@ -19,6 +19,9 @@ const itemcard = (stri, url, itemlogo, heading) => {
     chattext.classList.remove('d-none');
     let head = `<h3>${heading}</h3> <br> <img src = "${itemlogo}" > <br> <p>Ingredients: ${ingre}</p><br><a href = "${url}" target = "_blank">see more..</a>`;
 
+    loader.classList.add('d-none');
+
+    
     chatheading.innerHTML += head; 
 
 }
@@ -49,6 +52,7 @@ const display = (text) => {
 
 message.addEventListener('submit', e => {
     e.preventDefault();
+    loader.classList.remove('d-none');
     let itemtext = message.message.value;
     display(itemtext.toLowerCase());
     message.message.value = ""
