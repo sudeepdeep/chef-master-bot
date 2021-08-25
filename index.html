@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     <title>Home Page</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-      
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
         body{
             margin: 0;
             background-color: #ECE5E5;
+            font-family: 'Montserrat', sans-serif;
         }
          .intro{
             height: 100vh;
             padding-top: 5%;
         
             background-image: url('images/Web\ 1920\ –\ 1.png');
-            background-attachment: fixed;
+        
             background-size: auto 100%;
             background-position: center;
         }
@@ -32,7 +36,7 @@
             background-image: url('images/Web\ 1920\ –\ 2.png');
            background-size: auto 100%;
            background-position: center;
-           background-attachment: fixed;
+        
         }
 
 
@@ -41,12 +45,12 @@
         .chatbot{
             display: flex;
             padding-top: 10%;
-            padding-left:15%;
+            padding-left:10%;
         }
         .chat-text{
             background-color: white;
             height: 50px;
-            width: 35%;
+            width: 45%;
             text-align: center;
             border-radius: 20px;
         }
@@ -61,7 +65,9 @@
 
         .chattext{
             padding-left: 15%;
+            display: flex;
             width: 80%;
+            justify-content: center;
             min-height: fit-content;
             background-color: white;
             padding-bottom: 50px;
@@ -83,14 +89,13 @@
             width: 100px;
             border-radius: 50px;
         }
-
-
+    
     
         .message{
             display: flex;
             padding-left: 40%;
             padding-top: 20px;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
         }
         .message input{
             margin-top: 5%;
@@ -106,7 +111,8 @@
         }
         .usertext{
             
-            background-color: rgb(99, 247, 99);
+            background-color: #DCF8C6;
+      
             min-height: 50px;
             margin-bottom: 10px;
             width:50%;
@@ -118,41 +124,75 @@
             border-radius: 20px;
             margin-top: 3%;
         }
+
+
+
+
+
+        .loader {
+            border: 10px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 10px solid #3498db;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+            margin-left: 40%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            }
+
+            /* Safari */
+            @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
     </style>
 </head>
 <body>
         <div class="intro text-center">
             <h5>CHEF MASTER</h5>
-            <hp>An AI Controlled ChatBot<br>Learn How to Make Delicious Dishes</p>
+            <hp>An API Controlled ChatBot<br>Learn How to Make Delicious Dishes</p>
         </div>
         <div class = "second">
             <div class="chatbot">
                 <div class="chat-image"><img src = "images/307415.png" height="50px" width="50px"></div>
-                <div class="chat-text"><p id = "default">Hey! please Tell the dish You want to prepare.</p></div>
+                <div class="chat-text  shadow"><p id = "default">Hey! please Tell the dish You want to prepare.</p></div>
             </div>
             
 
-
+            
             <!-- User text and typing -->
             <div class = "user d-none">
                 <div class = "usertext"></div>
                 <div class = "user-image"><img src= "images/default.png" height="50px" width="50px"></div>
             </div>
+          
             <!-- chatbot text -->
-            <div class="chattext d-none">
+            
+            <div class="chattext shadow d-none">
+               
                 <div class = "chatheading">
                 </div>
             </div>
+            <div class="loader d-none"></div>
             <div class = "message">
                 <div class = "messagetab"><form> <input type = "text" name = "message" class="msg border-0"></form></div>
-                
+               
             </div>
             
-           
+            <center>
+                <div class = "colab">Made Collaboration with <a href = "https://www.seriouseats.com/" target="_blank"><img src = "images/serious-eats8980-removebg-preview.png" width="100px" height="100px"></a></div>
+                <footer style="margin-bottom: 20px;">© Copyright by Sudeep.K</footer>
+                </center>
         </div>
-   
+    
     <script src = "sandbox.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   
 </body>
 </html>
