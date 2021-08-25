@@ -23,7 +23,7 @@
         
             background-image: url('images/Web\ 1920\ –\ 1.png');
         
-            background-size: auto 100%;
+            background-size: cover;
             background-position: center;
         }
         .intro h5{
@@ -34,7 +34,7 @@
         .second{
             height: 100vh;
             background-image: url('images/Web\ 1920\ –\ 2.png');
-           background-size: auto 100%;
+           background-size:  cover;
            background-position: center;
         
         }
@@ -92,8 +92,7 @@
     
     
         .message{
-            display: flex;
-            padding-left: 40%;
+            
             padding-top: 20px;
             padding-bottom: 50px;
         }
@@ -152,6 +151,28 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
             }
+
+
+
+
+
+            @media screen and (max-width: 480px) {
+                .intro{
+            height: 100vh;
+            padding-top: 5%;
+        
+            background-image: url('images/phones/Web\ 1920\ –\ 1.png');
+        
+            }
+
+
+        .second{
+            height: 100vh;
+            background-image: url('images/phones/Web\ 1920\ –\ 2.png');
+
+        
+        }
+            }
     </style>
 </head>
 <body>
@@ -180,13 +201,15 @@
                 <div class = "chatheading">
                 </div>
             </div>
+            
             <div class="loader d-none"></div>
+            <center>
             <div class = "message">
-                <div class = "messagetab"><form> <input type = "text" name = "message" class="msg border-0"></form></div>
+                <div class = "messagetab"><form> <input class = "text shadow-lg  border-.2" placeholder="Enter Item Name" type = "text" name = "message" ></form></div>
                
             </div>
             
-            <center>
+         
                 <div class = "colab">Made Collaboration with <a href = "https://www.seriouseats.com/" target="_blank"><img src = "images/serious-eats8980-removebg-preview.png" width="100px" height="100px"></a></div>
                 <footer style="margin-bottom: 20px;">© Copyright by Sudeep.K</footer>
                 </center>
